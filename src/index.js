@@ -1,8 +1,8 @@
 import "./styles.css";
+import { initializeDropDowns } from "./modules/dropdown";
 
 function main() {
-  // Your load code here
-  console.log("Hello world from a template! :)");
+  initializeDropDowns();
 }
 
 main();
