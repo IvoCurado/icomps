@@ -145,6 +145,7 @@ html {
   --main-color: #285b85;
   --main-color-dark: #111;
   --main-color-light: #4d708d;
+  --main-color-lighter: rgba(114, 143, 141, 0.527);
   --secondary-color: #111;
   --secondary-color-light: #111;
   --secondary-color-dark: #111;
@@ -208,4 +209,24 @@ button {
 .carrousel-pic {
   min-width: 100%;
   height: auto;
+}
+
+.carousel-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  .nav-item {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    &:hover {
+      cursor: pointer;
+      background-color: var(--main-color-lighter);
+    }
+    &.active {
+      background-color: var(--main-color);
+    }
+  }
 }
