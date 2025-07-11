@@ -161,6 +161,7 @@ button {
   color: white;
   &:hover {
     cursor: pointer;
+    background-color: var(--main-color);
   }
 }
 
@@ -187,18 +188,24 @@ button {
 }
 
 .carousel-zone {
-  position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 20px;
-  img.carrousel-pic {
-    width: 400px;
-    height: 300px;
+  width: 100%;
+  overflow: hidden;
+
+  #previous-button,
+  #next-button {
+    width: 10%;
   }
   .carousel-images-zone {
+    max-width: 80%;
     display: flex;
+    z-index: -1;
     gap: 10%;
-    overflow: hidden;
   }
+}
+
+.carrousel-pic {
+  min-width: 100%;
+  height: auto;
 }
